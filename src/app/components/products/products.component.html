@@ -1,0 +1,52 @@
+<div class="row">
+  <div class="col-md-4">
+    <div id="productList" class="list-group">
+      <a *ngFor="let product of products | async" href="#" class="list-group-item list-group-item-action">
+        <h4 class="title">{{ product.name | titlecase }}</h4>
+        <p class="description">{{ product.description }}</p>
+      </a>
+    </div>
+    <br>
+    <input id="name" name="name" placeholder="enter name">
+    <textarea id="description" name="description" placeholder="enter description"></textarea>
+    <br>
+    <input type="submit" value="add product" (click)="onAddProduct()">
+  </div>
+
+  <div class="col-md-8">
+    <div class="card">
+      <img src="https://images.pexels.com/photos/247685/pexels-photo-247685.png?cs=srgb&dl=assorted-diet-edible-247685.jpg&fm=jpg" class="card-img-top" alt="Fruit Medley">
+      <div class="card-body">
+        <h5 class="card-title">Fruit Medley</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.pexels.com/photos/1833333/pexels-photo-1833333.jpeg?cs=srgb&dl=appetizer-blur-close-up-1833333.jpg&fm=jpg" class="card-img-top" alt="Salad">
+      <div class="card-body">
+        <h5 class="card-title">Salad</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.pexels.com/photos/2027696/pexels-photo-2027696.jpeg?cs=srgb&dl=berries-bowl-bowl-of-fruit-2027696.jpg&fm=jpg" class="card-img-top" alt="Fruit Bowl">
+      <div class="card-body">
+        <h5 class="card-title">Fruit Bowl</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?cs=srgb&dl=blur-breakfast-close-up-376464.jpg&fm=jpg" class="card-img-top" alt="Breakfast">
+      <div class="card-body">
+        <h5 class="card-title">Breakfast</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+

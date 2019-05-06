@@ -1,0 +1,19 @@
+.bg-light {
+  background-color:rgb(151, 209, 151) !important ;
+}
+#dropdown01 {
+  cursor: pointer;
+}
+#LogIn {
+  padding-right: 2em;
+  margin-right: 2em;
+  font-weight: bold;
+  border-right: 1px solid #5a7d5a;
+}
+.nav-link {
+  color: #4d6a4d !important;
+}
+.nav-link:hover {
+  color: #2b452b !important;
+}
+

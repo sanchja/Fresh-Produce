@@ -1,0 +1,15 @@
+
+.card {
+  width: 40%;
+  float:left;
+  margin: 5%;
+}
+#productList {
+  margin-top: 35px;
+}
+#productList .listgroup {
+  font-weight: bold;
+}
+.title {
+  color: #5a7d5a;
+}

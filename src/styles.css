@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css';
+body {
+  padding-top: 60px;
+  background-image: url('./assets/fruits_veges.jpg');
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: 80px 50px;
+}
+.thumb {
+  width: 150px;
+  height: auto;
+}
+.btn-primary {
+  background-color: #3ba63b !important;
+  border-color: #3ba63b;
+}
+.btn-secondary {
+  background-color: #5a7d5a !important;
+  border-color: #3ba63b;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  /* background-color: #5a7d5a; */
+  width: 100%;
+  text-align: center;
+  line-height: 0px;
+}
+
+
