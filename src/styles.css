@@ -7,6 +7,10 @@ body {
   background-size: 80%;
   background-position: 80px 50px;
 }
+.titles {
+  margin-top:2%;
+  text-align: center;
+}
 .thumb {
   width: 150px;
   height: auto;
@@ -22,11 +26,12 @@ body {
 footer {
   position: fixed;
   bottom: 0;
-  height: 50px;
-  /* background-color: #5a7d5a; */
+  height: 40px;
   width: 100%;
+  background-color: white;
   text-align: center;
-  line-height: 0px;
+  line-height: 40px;
+  border: 1px solid rgba(0,0,0,.125);
 }
 
 

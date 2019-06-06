@@ -1,0 +1,11 @@
+<div class="col-md-12">
+    <button (click)="getPhotos()">console log users</button>
+    <br><br>
+    <div id="productList" class="list-group">
+      <a *ngFor="let user of users" href="#" class="list-group-item list-group-item-action">
+        <h6 class="id">ID: {{ user.id }}</h6>
+        <h5 class="name">Name: {{ user.name }}</h5>
+        <p class="description">Phone: {{ user.phone }}</p>
+      </a>
+    </div>
+  </div>

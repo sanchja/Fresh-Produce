@@ -3,6 +3,7 @@
   width: 40%;
   float:left;
   margin: 5%;
+  margin-bottom: 7%;
 }
 #productList {
   margin-top: 35px;
@@ -10,6 +11,6 @@
 #productList .listgroup {
   font-weight: bold;
 }
-.title {
+.name {
   color: #5a7d5a;
 }

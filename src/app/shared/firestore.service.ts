@@ -1,28 +1,21 @@
-import { Component, OnInit } from '@angular/core';
-import { Products } from '../../shared/products.interface';
+import { Injectable, OnInit } from '@angular/core';
 import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from 'angularfire2/firestore';
-import { Observable, Subscriber } from 'rxjs';
-import { ViewCartComponent } from '../view-cart/view-cart.component';
+import { Observable } from 'rxjs';
+import { Products } from '../shared/products.interface';
 
-@Component({
-  selector: 'app-products',
-  templateUrl: './products.component.html',
-  styleUrls: ['./products.component.css']
+
+@Injectable({
+  providedIn: 'root'
 })
-
-export class ProductsComponent implements OnInit {
-
-  // refactored img Url
-  imgUrl = 'https://images.pexels.com/photos/';
-
+export class FirestoreService implements OnInit {
 
   productsCollection: AngularFirestoreCollection<Products>;
   products: Observable<Products[]>;
 
   // Products interface
-  public name: any;
-  public lastName: string;
-  public description: string;
+  name: any;
+  lastName: string;
+  description: string;
 
   constructor(private db: AngularFirestore) { }
 
@@ -50,5 +43,4 @@ export class ProductsComponent implements OnInit {
       console.error('Error writing document: ', error);
     });
   }
-
 }
